@@ -1,0 +1,89 @@
+*{
+    margin: 10px;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, Helvetica, sans-serif;
+}
+.eventCard {
+    width: 340px;
+    height: 256px;
+    border: 1px solid#E6DDDD;
+    border-radius: 8px;
+    box-shadow: 0px 0px 3px 0px rgba(88, 88, 88, 0.3);
+    transform: scale(1);
+    transition: box-shadow 0.5s;
+}
+
+.eventCard:hover {
+    box-shadow: 0px 0px 3px 0px rgba(88, 88, 88, 0.5);
+    transform: translate(0px, -1px);
+}
+
+.eventContent {
+    margin: 10px;
+}
+
+.eventHead {
+    margin: 0;
+    margin-top: 10px;
+}
+
+.eventTime {
+    margin-top: 20px;
+    color: #0098ab;
+    font-size: 14px;
+    font-weight: 600;
+}
+
+.eventTitle {
+    font-size: 20px;
+    font-weight: bold;
+    line-height: 150%;
+}
+
+.eventLocation {
+    display: flex;
+    margin: 2px 0 0 0;
+}
+.eventGroup {
+    color: #2e3e48;
+}
+
+.eventIcon {
+    margin-top: 0px;
+}
+
+.eventAdress {
+   color: rgb(88, 88, 88);
+   margin: 3px 0 0 0;
+   font-size: 15px;
+}
+
+.eventAttend {
+    display: flex;
+    margin: 20px 0 0 0;
+}
+
+.attendingCount {
+    color: rgb(88, 88, 88);
+    font-size: 15px;
+    flex-grow: 1;
+    margin-left: 0;
+}
+
+.attendButton {
+    font-size: 14px;
+    padding: 11px 20px;
+    border-radius: 5px;
+    margin: 0;
+    margin-right: 6px;
+    color: #0098ab;
+    border: 1px solid #0098ab;
+    font-weight: bold;
+    transition: all 0.5s;
+}
+
+.attendButton:hover {
+   color: #FFF;
+   background-color: #0098ab;
+}
