@@ -193,3 +193,73 @@
 .categoryButton:hover {
     border: 1px solid rgba(88, 88, 88, 0.7);
 }
+
+/* COMPONET 5: CREATE GROUP */
+
+.createGroup{
+    width: 1060px;
+    height: 380px;
+    display: flex;
+}
+
+.createGroup-content {
+    width: 700px;
+    background-color: rgb(122, 29, 71);;
+    margin: 0;
+}
+
+.createGroup-content .main {
+    margin: 90px 60px 0px;
+    color: #FFF;
+}
+
+.createGroup-content .main h1 {
+    margin-bottom: 30px;
+}
+
+.createGroup-content .main p {
+    margin-bottom: 50px;
+    line-height: 150%;
+}
+
+.createGroup-link-1 {
+    text-decoration: none;
+    color: #FFF;
+    background-color: rgba(246, 88, 88, 0.99);
+    padding: 13px 20px;
+    border-radius: 5px;
+    font-size: 15px;
+    margin-right: 5px;
+    transition: all 0.5s;
+}
+
+.createGroup-link-1:hover {
+    background-color: rgba(246, 88, 88, 0.8);
+}
+
+.createGroup-link-2 {
+    box-sizing: border-box;
+    text-decoration: none;
+    color:rgba(255, 255, 255, 1);
+    border: 1px solid rgba(255, 255, 255, 1);;
+    margin-left: 0;
+    padding: 13px 20px;
+    border-radius: 5px;
+    font-size: 15px;
+    transition: all 0.5s;
+}
+
+.createGroup-link-2:hover {
+    color: rgba(255, 255, 255, 0.8);
+    border-color:  rgba(255, 255, 255, 0.8);
+}
+
+
+.createGroup-image {
+    margin: 0;
+    margin-left: 20px;
+    width: 340px;
+    background-image: url('https://www.meetup.com/mu_static/en-US/yoga.fa45f7d2.jpg');
+    background-size: cover;
+    background-position: center;
+}
