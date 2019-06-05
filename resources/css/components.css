@@ -14,18 +14,18 @@
 }
 
 .eventCard {
+    box-sizing: border-box;
     width: 340px;
     height: 256px;
     border: 1px solid#E6DDDD;
     border-radius: 8px;
     box-shadow: 0px 0px 3px 0px rgba(88, 88, 88, 0.3);
-    transform: scale(1);
-    transition: box-shadow 0.5s;
+    transition: all 0.5s;
 }
 
 .eventCard:hover {
     box-shadow: 0px 0px 3px 0px rgba(88, 88, 88, 0.5);
-    transform: translate(0px, -1px);
+    transform: translate(0px, -2px);
 }
 
 .eventContent {
@@ -99,3 +99,56 @@
 
 
 /* COMPONENT 2:  */
+
+.groupCard-link {
+    text-decoration: none;
+    color: #000;
+}
+
+.groupCard {
+    box-sizing: border-box;
+    width: 250px;
+    height: 324.63px;
+    border: 1px solid#E6DDDD;
+    border-radius: 8px;
+    box-shadow: 0px 0px 3px 0px rgba(88, 88, 88, 0.3);
+    transition: all 0.5s;
+}
+
+.groupCard:hover {
+    box-shadow: 0px 0px 3px 0px rgba(88, 88, 88, 0.5);
+    transform: translate(0px, -2px);
+}
+.groupCard-image-1 {
+    height: 43.75%;
+    background-image: url('https://secure.meetupstatic.com/photos/event/7/5/1/5/600_480149973.jpeg');
+    background-position: center;
+    background-size: cover;
+    margin: 0;
+    border-top-left-radius: 8px;
+    border-top-right-radius: 8px;
+
+}
+
+.groupCardContent {
+    margin: 20px;
+    height: 56.25%;
+}
+
+.groupCard-category {
+    color: rgb(88, 88, 88);
+    margin: 3px 0 0 0;
+    font-size: 14px;
+}
+
+.groupCard-title {
+    margin: 15px 0 45px 0;
+    font-size: 20px;
+    font-weight: 600;
+}
+
+.groupCard-members {
+    margin: 0;
+    color: rgb(88, 88, 88);
+    font-size: 14px;
+}
