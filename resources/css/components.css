@@ -397,3 +397,39 @@
     top: 6px;
     left: 4px;
 }
+
+/* COMPONENT 9: GET THE APP */
+
+.getTheApp {
+    height: 320px;;
+    display: flex;
+    justify-content: center;
+}
+
+.getTheApp-content {
+    flex-basis: 40%;
+    display: flex;
+    align-items: center;
+}
+
+.getTheApp-content .box span {
+    font-size: 32px;
+    padding: 0;
+    font-weight: bold;
+}
+.getTheApp-link {
+    display: block;
+    color:rgb(0, 162, 199);
+    text-decoration: none;
+    font-weight: bold;
+    font-size: 15px;
+    position: relative;
+    top: -25px;
+    margin-bottom: 30px;
+}
+
+.getTheApp-link .icon-forward {
+    position: relative;
+    top: 6px;
+    left: 4px;
+}
