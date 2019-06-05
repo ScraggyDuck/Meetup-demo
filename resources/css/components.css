@@ -433,3 +433,94 @@
     top: 6px;
     left: 4px;
 }
+
+/* COMPONENT 10: FOOTER */
+
+.footer {
+    height: 560px;
+    color: #FFF;
+    background-color: rgba(53, 62, 72, 0.95);
+}
+
+.footer-main {
+    margin: 0 auto;
+    margin-bottom: 50px;
+    width: 1060px;
+    height: 80%;
+}
+
+.footer-main .header {
+    height: 90px;
+    border-bottom: 1px solid rgb(88, 88, 88);
+}
+
+.footer-main .header a {
+    color: #FFF;
+    position: relative;
+    top: 40%;
+    transition: all 0.1s;
+}
+
+.footer-main .header a:hover {
+    text-decoration: none;
+}
+
+.footer-main .main {
+    display: flex;
+}
+
+.footer-main .main .list-item {
+    flex-grow: 1;
+}
+
+.footer-main .main .list-item .item{
+    color:  rgba(255, 255, 255, 0.7);
+    margin-bottom: 30px;
+}
+
+.footer-main .main .list-item h4{
+    margin-bottom: 30px;
+}
+
+.footer-main .main .contact {
+    width: 400px;
+}
+
+.footer-main .main .contact .follow i{
+    color: rgb(162, 162, 162);
+    margin-right: 30px;
+    font-size: 26px;
+}
+
+.appItem {
+    margin: 0;
+}
+
+.footer-main .main .contact #languagePicker{
+    height: 50px;
+    width: 350px;
+    background-color: rgb(15, 23, 33);
+    border: 1px solid rgb(162, 162, 162);
+    color: #FFF;
+    padding-left: 10px;
+    border-radius: 4px;
+    font-size: 16px;
+    margin: 30px 0px;
+}
+.footer-legal {
+    background-color: rgb(47, 54, 63);
+    margin: 0;
+    height: 20%;
+}
+
+.footer-legal .content {
+    width: 1060px;
+    margin: 30px auto;
+    font-size: 14px;
+    position: relative;
+    top: 25%;
+}
+.footer-legal .content .box-1 {
+    margin-bottom: 30px;
+}
+
