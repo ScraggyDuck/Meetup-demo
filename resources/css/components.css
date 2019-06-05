@@ -98,7 +98,7 @@
 }
 
 
-/* COMPONENT 2:  */
+/* COMPONENT 2: GROUPCARD */
 
 .groupCard-link {
     text-decoration: none;
@@ -151,4 +151,27 @@
     margin: 0;
     color: rgb(88, 88, 88);
     font-size: 14px;
+}
+
+/* COMPONENT 3: CATEGORY CARD */
+
+.categoryCard-link {
+    text-decoration: none;
+    color: #000;
+}
+
+.categoryCard {
+    width: 253px;
+    height: 192px;
+}
+.categoryCard-image-1 {
+    height: 160px;
+    background-image: url('https://secure.meetupstatic.com/photos/event/2/e/a/7/600_450131943.jpeg');
+    background-size: cover;
+    background-position: center;
+    border-radius: 8px;
+}
+
+.categoryCard-title h4 {
+    margin: 0;
 }
