@@ -1,0 +1,506 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Meetup</title>
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <!-- <link rel="stylesheet" href="/resources/css/components.css"> -->
+    <link rel="stylesheet" href="./resources/css/styles.css">
+</head>
+
+<body>
+    <div class="container">
+        <div class="header">
+            <div class="navbar">
+                <div class="logo">
+                    <img src="https://www.meetup.com/mu_static/en-US/logo--script.004ada05.svg" height="44px">
+                </div>
+                <div class="navbar-item">
+                    <a href="#" class="item-1">Start a new group</a>
+                    <a href="#" class="item-2">Login</a>
+                    <a href="#" class="item-2">Sign up</a>
+                </div>
+            </div>
+            <div class="exploreHome">
+                <div class="exploreHome-title">The real world is calling</div>
+                <div class="exploreHome-content">Join a local group to meet people, try something new, or do more of
+                    what you love.</div>
+                <a href="#" class="exploreHome-link">Join Meetup</a>
+            </div>
+            <div class="list-button">
+                <a class="categoryButton" href="#">Join a movement</a>
+                <a class="categoryButton" href="#">Learn to cook</a>
+                <a class="categoryButton" href="#">Train for a marathon</a>
+                <a class="categoryButton" href="#">Build a mobile app</a>
+                <a class="categoryButton" href="#">Hike a moutain</a>
+                <a class="categoryButton" href="#">Practice a language</a>
+            </div>
+        </div>
+        <div class="main-content">
+            <div class="eventsNearYou">
+                <div class="eventsNearYou-title">
+                    <h2>Events near you</h2>
+                    <a href="#" id="see-all">See all</a>
+                    <span>See what's happening soon in your area.</span>
+                </div>
+                <div class="eventsCard">
+                    <a class='eventCard-link' href="#">
+                        <div class="eventCard">
+                            <div class="eventContent">
+                                <div class="eventHead">
+                                    <div class="eventTime">THU, JUN 6, 7:00 PM</div>
+                                    <div class="eventTitle">Monthly Discussion about UX and Product Design</div>
+                                    <div class="eventGroup">UX Vietnam Community Meetup</div>
+                                    <div class="eventLocation">
+                                        <i class="material-icons eventIcon">location_on</i>
+                                        <div class="eventAdress">Starbucks Leman</div>
+                                    </div>
+                                </div>
+                                <div class="eventAttend">
+                                    <div class="attendingCount">13 attendees</div>
+                                    <div class="attendButton">Attend</div>
+                                </div>
+                            </div>
+                        </div>
+                    </a>
+                    <a class='eventCard-link' href="#">
+                        <div class="eventCard">
+                            <div class="eventContent">
+                                <div class="eventHead">
+                                    <div class="eventTime">FRI, JUN 7, 6:00 PM</div>
+                                    <div class="eventTitle">Play board games in Q Binh Thành</div>
+                                    <div class="eventGroup">Board Game Night - Ho Chi Minh City</div>
+                                    <div class="eventLocation">
+                                        <i class="material-icons eventIcon">location_on</i>
+                                        <div class="eventAdress">Coffee Talk English</div>
+                                    </div>
+                                </div>
+                                <div class="eventAttend">
+                                    <div class="attendingCount">4 attendees</div>
+                                    <div class="attendButton">Attend</div>
+                                </div>
+                            </div>
+                        </div>
+                    </a>
+                    <a class='eventCard-link' href="#">
+                        <div class="eventCard">
+                            <div class="eventContent">
+                                <div class="eventHead">
+                                    <div class="eventTime">Sun, Jun 9, 9:15 PM</div>
+                                    <div class="eventTitle">我们说中文吧!!!Let's Speak Chinese!!!</div>
+                                    <div class="eventGroup">Ho Chi Minh City Chinese Speaking Club</div>
+                                    <div class="eventLocation">
+                                        <i class="material-icons eventIcon">location_on</i>
+                                        <div class="eventAdress">Youth Cultural House</div>
+                                    </div>
+                                </div>
+                                <div class="eventAttend">
+                                    <div class="attendingCount">5 attendees</div>
+                                    <div class="attendButton">Attend</div>
+                                </div>
+                            </div>
+                        </div>
+                    </a>
+                </div>
+            </div>
+            <div class="groupsNearYou">
+                <div class="groupsNearYou-title">
+                    <h2>Groups near you</h2>
+                    <a href="#" id="see-all">See all</a>
+                    <span>Find groups that get together to do the things they love.</span>
+                </div>
+                <div class="groupsCard">
+                    <a href="#" class="groupCard-link">
+                        <div class="groupCard">
+                            <div class="groupCard-image-1"></div>
+                            <div class="groupCardContent">
+                                <div class="groupCard-category">TECH</div>
+                                <div class="groupCard-title">ProductTank Ho Chi Minh</div>
+                                <div class="groupCard-members">1,244 Members</div>
+                            </div>
+                        </div>
+                    </a>
+                    <a href="#" class="groupCard-link">
+                        <div class="groupCard">
+                            <div class="groupCard-image-1"></div>
+                            <div class="groupCardContent">
+                                <div class="groupCard-category">LANGUAGE & CULTURE</div>
+                                <div class="groupCard-title">Saigon Language & Culture Meetup</div>
+                                <div class="groupCard-members">2498 Friends</div>
+                            </div>
+                        </div>
+                    </a>
+                    <a href="#" class="groupCard-link">
+                        <div class="groupCard">
+                            <div class="groupCard-image-1"></div>
+                            <div class="groupCardContent">
+                                <div class="groupCard-category">SOCIAL</div>
+                                <div class="groupCard-title">HO CHI MINH CITY SOCIAL</div>
+                                <div class="groupCard-members">494 Members</div>
+                            </div>
+                        </div>
+                    </a>
+                    <a href="#" class="groupCard-link">
+                        <div class="groupCard">
+                            <div class="groupCard-image-1"></div>
+                            <div class="groupCardContent">
+                                <div class="groupCard-category">BELIEFS</div>
+                                <div class="groupCard-title">LOCAL AND TRAVELER MEETUP</div>
+                                <div class="groupCard-members">1,942 Members</div>
+                            </div>
+                        </div>
+                    </a>
+                </div>
+            </div>
+            <div class="createGroup">
+                <div class="createGroup-content">
+                    <div class="main">
+                        <h1>Bring your community to Meetup</h1>
+                        <p>
+                            Want to give your community a boost? Start a group on Meetup to reach more people in your
+                            area
+                            and
+                            organize local events. You can even use ticketing tools or charge your members dues to help
+                            cover
+                            costs.
+                        </p>
+                        <a href="#" class="createGroup-link-1">Start a group</a>
+                        <a href="#" class="createGroup-link-2">Learn more</a>
+                    </div>
+                </div>
+                <div class="createGroup-image"></div>
+            </div>
+            <div class="categories">
+                <div class="categories-title">
+                    <h2>Categories</h2>
+                    <span>Browse groups by topics you're interested in.</span>
+                </div>
+                <div class="categoriesCard">
+                    <div class="categories-box">
+                        <a href="#" class="categoryCard-link">
+                            <div class="categoryCard">
+                                <div class="categoryCard-image-1"></div>
+                                <div class="categoryCard-title">
+                                    <h4>Outdoors & Adventure</h4>
+                                </div>
+                            </div>
+                        </a>
+                        <a href="#" class="categoryCard-link">
+                            <div class="categoryCard">
+                                <div class="categoryCard-image-1"></div>
+                                <div class="categoryCard-title">
+                                    <h4>Outdoors & Adventure</h4>
+                                </div>
+                            </div>
+                        </a>
+                        <a href="#" class="categoryCard-link">
+                            <div class="categoryCard">
+                                <div class="categoryCard-image-1"></div>
+                                <div class="categoryCard-title">
+                                    <h4>Outdoors & Adventure</h4>
+                                </div>
+                            </div>
+                        </a>
+                        <a href="#" class="categoryCard-link">
+                            <div class="categoryCard">
+                                <div class="categoryCard-image-1"></div>
+                                <div class="categoryCard-title">
+                                    <h4>Outdoors & Adventure</h4>
+                                </div>
+                            </div>
+                        </a>
+                    </div>
+                    <div class="categories-box">
+                        <a href="#" class="categoryCard-link">
+                            <div class="categoryCard">
+                                <div class="categoryCard-image-1"></div>
+                                <div class="categoryCard-title">
+                                    <h4>Outdoors & Adventure</h4>
+                                </div>
+                            </div>
+                        </a>
+                        <a href="#" class="categoryCard-link">
+                            <div class="categoryCard">
+                                <div class="categoryCard-image-1"></div>
+                                <div class="categoryCard-title">
+                                    <h4>Outdoors & Adventure</h4>
+                                </div>
+                            </div>
+                        </a>
+                        <a href="#" class="categoryCard-link">
+                            <div class="categoryCard">
+                                <div class="categoryCard-image-1"></div>
+                                <div class="categoryCard-title">
+                                    <h4>Outdoors & Adventure</h4>
+                                </div>
+                            </div>
+                        </a>
+                        <a href="#" class="categoryCard-link">
+                            <div class="categoryCard">
+                                <div class="categoryCard-image-1"></div>
+                                <div class="categoryCard-title">
+                                    <h4>Outdoors & Adventure</h4>
+                                </div>
+                            </div>
+                        </a>
+                    </div>
+                    <div class="categories-box">
+                        <a href="#" class="categoryCard-link">
+                            <div class="categoryCard">
+                                <div class="categoryCard-image-1"></div>
+                                <div class="categoryCard-title">
+                                    <h4>Outdoors & Adventure</h4>
+                                </div>
+                            </div>
+                        </a>
+                        <a href="#" class="categoryCard-link">
+                            <div class="categoryCard">
+                                <div class="categoryCard-image-1"></div>
+                                <div class="categoryCard-title">
+                                    <h4>Outdoors & Adventure</h4>
+                                </div>
+                            </div>
+                        </a>
+                        <a href="#" class="categoryCard-link">
+                            <div class="categoryCard">
+                                <div class="categoryCard-image-1"></div>
+                                <div class="categoryCard-title">
+                                    <h4>Outdoors & Adventure</h4>
+                                </div>
+                            </div>
+                        </a>
+                        <a href="#" class="categoryCard-link">
+                            <div class="categoryCard">
+                                <div class="categoryCard-image-1"></div>
+                                <div class="categoryCard-title">
+                                    <h4>Outdoors & Adventure</h4>
+                                </div>
+                            </div>
+                        </a>
+                    </div>
+                    <div class="categories-box">
+                        <a href="#" class="categoryCard-link">
+                            <div class="categoryCard">
+                                <div class="categoryCard-image-1"></div>
+                                <div class="categoryCard-title">
+                                    <h4>Outdoors & Adventure</h4>
+                                </div>
+                            </div>
+                        </a>
+                        <a href="#" class="categoryCard-link">
+                            <div class="categoryCard">
+                                <div class="categoryCard-image-1"></div>
+                                <div class="categoryCard-title">
+                                    <h4>Outdoors & Adventure</h4>
+                                </div>
+                            </div>
+                        </a>
+                        <a href="#" class="categoryCard-link">
+                            <div class="categoryCard">
+                                <div class="categoryCard-image-1"></div>
+                                <div class="categoryCard-title">
+                                    <h4>Outdoors & Adventure</h4>
+                                </div>
+                            </div>
+                        </a>
+                        <a href="#" class="categoryCard-link">
+                            <div class="categoryCard">
+                                <div class="categoryCard-image-1"></div>
+                                <div class="categoryCard-title">
+                                    <h4>Outdoors & Adventure</h4>
+                                </div>
+                            </div>
+                        </a>
+                    </div>
+                    <div class="categories-box">
+                        <a href="#" class="categoryCard-link">
+                            <div class="categoryCard">
+                                <div class="categoryCard-image-1"></div>
+                                <div class="categoryCard-title">
+                                    <h4>Outdoors & Adventure</h4>
+                                </div>
+                            </div>
+                        </a>
+                        <a href="#" class="categoryCard-link">
+                            <div class="categoryCard">
+                                <div class="categoryCard-image-1"></div>
+                                <div class="categoryCard-title">
+                                    <h4>Outdoors & Adventure</h4>
+                                </div>
+                            </div>
+                        </a>
+                        <a href="#" class="categoryCard-link">
+                            <div class="categoryCard">
+                                <div class="categoryCard-image-1"></div>
+                                <div class="categoryCard-title">
+                                    <h4>Outdoors & Adventure</h4>
+                                </div>
+                            </div>
+                        </a>
+                        <a href="#" class="categoryCard-link">
+                            <div class="categoryCard">
+                                <div class="categoryCard-image-1"></div>
+                                <div class="categoryCard-title">
+                                    <h4>Outdoors & Adventure</h4>
+                                </div>
+                            </div>
+                        </a>
+                    </div>
+                    <div class="categories-box">
+                        <a href="#" class="categoryCard-link">
+                            <div class="categoryCard">
+                                <div class="categoryCard-image-1"></div>
+                                <div class="categoryCard-title">
+                                    <h4>Outdoors & Adventure</h4>
+                                </div>
+                            </div>
+                        </a>
+                        <a href="#" class="categoryCard-link">
+                            <div class="categoryCard">
+                                <div class="categoryCard-image-1"></div>
+                                <div class="categoryCard-title">
+                                    <h4>Outdoors & Adventure</h4>
+                                </div>
+                            </div>
+                        </a>
+                        <a href="#" class="categoryCard-link">
+                            <div class="categoryCard">
+                                <div class="categoryCard-image-1"></div>
+                                <div class="categoryCard-title">
+                                    <h4>Outdoors & Adventure</h4>
+                                </div>
+                            </div>
+                        </a>
+                        <a href="#" class="categoryCard-link">
+                            <div class="categoryCard">
+                                <div class="categoryCard-image-1"></div>
+                                <div class="categoryCard-title">
+                                    <h4>Outdoors & Adventure</h4>
+                                </div>
+                            </div>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="sidebar">
+            <div class="howMeetupWorks">
+                <div class="howMeetupWorks-title">How Meetup Words</div>
+                <div class="howMeetupWorks-content">
+                    <div class="howMeetupWorks-box">
+                        <i class="material-icons icon-find">search</i>
+                        <h2>Discover groups</h2>
+                        <span>See who’s hosting local events for all the things you love.</span>
+                        <a href="#" class="howMeetupWorks-link">
+                            John Meetup
+                            <i class="material-icons icon-forward">arrow_forward</i>
+                        </a>
+                    </div>
+                    <div class="howMeetupWorks-box">
+                        <i class="material-icons icon-add">add</i>
+                        <h2>Start a group</h2>
+                        <span>Create your own Meetup group, and draw from a community of millions.</span>
+                        <a href="#" class="howMeetupWorks-link">
+                            Get started
+                            <i class="material-icons icon-forward">arrow_forward</i>
+                        </a>
+                    </div>
+                </div>
+            </div>
+            <div class="getTheApp">
+                <div class="getTheApp-content">
+                    <div class="box">
+                        <span>Get the app</span>
+                        <a href="#" class="getTheApp-link">
+                            Lear more
+                            <i class="material-icons icon-forward">arrow_forward</i>
+                        </a>
+                        <img src="https://www.meetup.com/mu_static/en-US/download_en.b85d892d.png" height="49px" style="margin-right:20px;">
+                        <img src="https://www.meetup.com/mu_static/en-US/download_en.cf6dad40.png" height="49px">
+                    </div>
+                </div>
+                <div class="getTheApp-image">
+                    <img src="https://www.meetup.com/mu_static/en-US/app_download.1a368bb6.png" height="320px">
+                </div>
+            </div>
+        </div>
+        <div class="footer">
+            <div class="footer-main">
+                <div class="header">
+                    <a href="#">Start a new group</a>
+                </div>
+                <div class="main">
+                    <div class="list-item">
+                        <h4>Your Account</h4>
+                        <div class="item">Sign up</div>
+                        <div class="item">Log in</div>
+                        <div class="item">Help</div>
+                    </div>
+                    <div class="list-item">
+                        <h4>Discover</h4>
+                        <div class="item">Groups</div>
+                        <div class="item">Calendar</div>
+                        <div class="item">Topics</div>
+                        <div class="item">Cities</div>
+                    </div>
+                    <div class="list-item">
+                        <h4>Meetup</h4>
+                        <div class="item">About</div>
+                        <div class="item">Meetup pro</div>
+                        <div class="item">Careers</div>
+                        <div class="item">Apps</div>
+                        <div class="item">API</div>
+                    </div>
+                    <div class="contact">
+                        <div class="follow">
+                            <h4>Follow us</h4>
+                            <i class="material-icons">camera_alt</i>
+                            <i class="material-icons">camera</i>
+                            <i class="material-icons">cloud</i>
+                            <i class="material-icons">business</i>
+                            <i class="material-icons">movie_filter</i>
+                        </div>
+                        <div class="languageChange">
+                            <select name="languagePicker" id="languagePicker" aria-invalid="false">
+                                <option value="en-US">English</option>
+                                <option value="de-DE">Deutsch</option>
+                                <option value="en-AU">English (Australia)</option>
+                                <option value="es">Español</option>
+                                <option value="es-ES">Español (España)</option>
+                                <option value="fr-FR">Français</option>
+                                <option value="it-IT">Italiano</option>
+                                <option value="ja-JP">日本語</option>
+                                <option value="ko-KR">한국어</option>
+                                <option value="nl-NL">Nederlands</option>
+                                <option value="pt-BR">Português</option>
+                                <option value="pl-PL">Polski</option>
+                                <option value="ru-RU">Русский</option>
+                                <option value="th-TH">ไทย</option>
+                                <option value="tr-TR">Türkçe</option>
+                            </select>
+                        </div>
+                        <div class="appItem">
+                            <img src="https://www.meetup.com/mu_static/en-US/download_en.b85d892d.png" height="49px">
+                            <img src="https://www.meetup.com/mu_static/en-US/download_en.cf6dad40.png" height="49px">
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="footer-legal">
+                <div class="content">
+                    <div class="box-1">
+                        © Meetup 2019 - Meetup is a wholly owned subsidiary of WeWork Companies Inc.</li>
+                    </div>
+                    <div class="box-2">
+                        Terms of Service - Privacy Policy - Cookie Policy
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+
+</html>

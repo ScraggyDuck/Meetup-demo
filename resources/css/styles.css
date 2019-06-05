@@ -1,19 +1,602 @@
-/* ---------------------------------------------------------- */
-/* ----------------------------DEFAUT SETUP------------------ */
-/* ---------------------------------------------------------- */
 * {
-    padding: 0px;
-    margin: 0px;
+    margin: 0;
+    padding: 0;
     box-sizing: border-box;
-    text-rendering: optimizeLegibility; /* Hiện thị chữ lên website 1 cách tốt nhất */
-    /* mặc định là 16px */
+    font-family: Arial, Helvetica, sans-serif;
 }
 
-/* --------------------------------------------------------- */
-/* -------------------SỬ DỤNG LẠI NHIỀU LẦN----------------- */
-/* --------------------------------------------------------- */
+/*BEGIN HEADER */
+.header {
+    border-bottom: 1px solid rgba(46, 62, 72, 0.1);
+}
+    /* NAV BAR */
+
+    .navbar {
+        height: 86.7px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .navbar .logo{
+        flex-grow: 1;
+        margin-left: 20px;
+    }
+
+    .navbar-item a{
+        font-size: 14px;
+        margin-right: 20px;
+        text-decoration: none;
+        transition: all 0.1s;
+    }
+    .navbar-item .item-1 {
+        color: rgb(0, 162, 199);
+        font-weight: bold;
+        font-size: 14px;
+        padding: 5px 20px;
+        border-right: 1px solid rgba(46, 62, 72, 0.3);
+    }
+
+    .navbar-item .item-2 {
+        color: rgb(88, 88, 88);
+    }
+
+    .navbar-item .item-2:hover {
+        color: rgba(0, 162, 199, 0.6);
+    }
+
+    /* EXPLORE HOME */
+
+    .exploreHome {
+        height: 460px;
+        background-image: linear-gradient(90deg, rgba(1,1,1,0.4) 0%, rgba(0,0,0,0.4) 100%), url('https://www.meetup.com/mu_static/en-US/still_7.1fe15e9b.jpg');
+        background-size: cover;
+        background-position: center;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        color: #FFF;
+    }
 
 
-/* --------------------------------------------------------- */
-/* --------------------------HEADER------------------------- */
-/* --------------------------------------------------------- */
+    .exploreHome-title {
+        font-size: 42px;
+        font-weight: bold;
+        margin-bottom: 20px;
+    }
+
+    .exploreHome-content {
+        font-size: 19px;
+        font-weight: bold;
+    }
+
+    .exploreHome-link {
+        text-decoration: none;
+        background-color: #F13A59;
+        color: #FFF;
+        padding: 15px 100px;
+        border-radius: 3px;
+        margin-top: 40px;
+        font-weight: bold;
+        transition: all 0.5s;
+    }
+
+    .exploreHome-link:hover {
+        background-color: #e2183a;
+    }
+
+
+    /* LIST BUTTON */
+
+    .list-button {
+        display: flex;
+        justify-content: center;
+    }
+    .categoryButton {
+        margin: 20px 20px 20px 0px;
+        text-decoration: none;
+        font-size: 14px;
+        color: rgb(88, 88, 88);
+        font-weight: bold;
+        border-radius: 5px;
+        padding: 7px 10px;
+        border: 1px solid rgba(88, 88, 88, 0.3);
+        background-color: rgb(246, 247, 248);
+        transition: all 0.5s;
+    }
+
+    .categoryButton:hover {
+        border: 1px solid rgba(88, 88, 88, 0.7);
+    }
+
+/* END HEADER */
+
+/* BEGIN MAIN CONTENT */
+.main-content {
+    width: 1060px;
+    margin: 0 auto;
+}
+
+.eventsNearYou, .groupsNearYou, .categories{
+    margin-top: 40px;
+    margin-bottom: 20px;
+}
+
+.eventsNearYou-title h2, .groupsNearYou-title h2, .categories-title h2 {
+    font-size: 21px;
+}
+
+.eventsNearYou-title span, .groupsNearYou span, .categories-title span {
+   color:  rgba(88, 88, 88, 1);
+}
+
+#see-all {
+    font-size: 15px;
+    color: rgba(0, 162, 199, 1);
+    text-align: center;
+    font-weight: bold;
+    float: right;
+    text-decoration: none;
+}
+
+.eventsCard {
+    margin-top: 25px;
+    display: flex;
+}
+
+.groupsCard {
+    margin-top: 25px;
+    display: flex;
+}
+
+.categoriesCard {
+    margin-top: 25px;
+    display: flex;
+    flex-direction: column;
+}
+
+.categories-box {
+    display: flex;
+    margin-bottom: 10px;
+}
+
+
+/* COMPONENT 1: EVENT CARD */
+    .eventCard-link {
+        text-decoration: none;
+        color: #000;
+        margin-right: 20px;
+    }
+
+    .eventCard {
+        box-sizing: border-box;
+        width: 340px;
+        height: 256px;
+        border: 1px solid#E6DDDD;
+        border-radius: 8px;
+        box-shadow: 0px 0px 3px 0px rgba(88, 88, 88, 0.3);
+        transition: all 0.5s;
+    }
+
+    .eventCard:hover {
+        box-shadow: 0px 0px 3px 0px rgba(88, 88, 88, 0.5);
+        transform: translate(0px, -2px);
+    }
+
+    .eventContent {
+        margin: 10px;
+    }
+
+    .eventHead {
+        margin: 0;
+        margin-top: 10px;
+    }
+
+    .eventTime {
+        margin-top: 20px;
+        margin-bottom: 15px;
+        color: #0098ab;
+        font-size: 14px;
+        font-weight: 600;
+    }
+
+    .eventTitle {
+        font-size: 20px;
+        margin-bottom: 12px;
+        font-weight: bold;
+        line-height: 150%;
+    }
+
+    .eventLocation {
+        margin-bottom: 12px;
+        display: flex;
+        margin: 2px 0 0 0;
+    }
+    .eventGroup {
+        margin-bottom: 12px;
+        color: #2e3e48;
+    }
+
+    .eventIcon {
+        margin-top: 0px;
+    }
+
+    .eventAdress {
+    color: rgb(88, 88, 88);
+    margin: 3px 0 0 0;
+    font-size: 15px;
+    }
+
+    .eventAttend {
+        display: flex;
+        margin: 20px 0 0 0;
+        margin-bottom: 15px;
+    }
+
+    .attendingCount {
+        color: rgb(88, 88, 88);
+        font-size: 15px;
+        flex-grow: 1;
+        margin-left: 0;
+    }
+
+    .attendButton {
+        font-size: 14px;
+        padding: 11px 20px;
+        border-radius: 5px;
+        margin: 0;
+        margin-right: 6px;
+        color: #0098ab;
+        border: 1px solid #0098ab;
+        font-weight: bold;
+        transition: all 0.5s;
+    }
+
+    .attendButton:hover {
+    color: #FFF;
+    background-color: #0098ab;
+    }
+
+/* COMPONENT 2: GROUPCARD */
+
+    .groupCard-link {
+        text-decoration: none;
+        color: #000;
+        margin-right: 20px;
+    }
+
+    .groupCard {
+        box-sizing: border-box;
+        width: 250px;
+        height: 324.63px;
+        border: 1px solid#E6DDDD;
+        border-radius: 8px;
+        box-shadow: 0px 0px 3px 0px rgba(88, 88, 88, 0.3);
+        transition: all 0.5s;
+    }
+
+    .groupCard:hover {
+        box-shadow: 0px 0px 3px 0px rgba(88, 88, 88, 0.5);
+        transform: translate(0px, -2px);
+    }
+    .groupCard-image-1 {
+        height: 43.75%;
+        background-image: url('https://secure.meetupstatic.com/photos/event/7/5/1/5/600_480149973.jpeg');
+        background-position: center;
+        background-size: cover;
+        margin: 0;
+        border-top-left-radius: 8px;
+        border-top-right-radius: 8px;
+
+    }
+
+    .groupCardContent {
+        margin: 20px;
+        height: 56.25%;
+    }
+
+    .groupCard-category {
+        color: rgb(88, 88, 88);
+        margin: 3px 0 0 0;
+        font-size: 14px;
+    }
+
+    .groupCard-title {
+        margin: 15px 0 45px 0;
+        font-size: 20px;
+        font-weight: 600;
+    }
+
+    .groupCard-members {
+        margin: 0;
+        color: rgb(88, 88, 88);
+        font-size: 14px;
+    }
+/* COMPONET 5: CREATE GROUP */
+
+.createGroup{
+    width: 1060px;
+    height: 380px;
+    display: flex;
+    margin-top: 60px;
+}
+
+.createGroup-content {
+    width: 700px;
+    background-color: rgb(122, 29, 71);;
+    margin: 0;
+}
+
+.createGroup-content .main {
+    margin: 90px 60px 0px;
+    color: #FFF;
+}
+
+.createGroup-content .main h1 {
+    margin-bottom: 30px;
+}
+
+.createGroup-content .main p {
+    margin-bottom: 50px;
+    line-height: 150%;
+}
+
+.createGroup-link-1 {
+    text-decoration: none;
+    color: #FFF;
+    background-color: rgba(246, 88, 88, 0.99);
+    padding: 13px 20px;
+    border-radius: 5px;
+    font-size: 15px;
+    margin-right: 5px;
+    transition: all 0.5s;
+}
+
+.createGroup-link-1:hover {
+    background-color: rgba(246, 88, 88, 0.8);
+}
+
+.createGroup-link-2 {
+    box-sizing: border-box;
+    text-decoration: none;
+    color:rgba(255, 255, 255, 1);
+    border: 1px solid rgba(255, 255, 255, 1);;
+    margin-left: 0;
+    padding: 13px 20px;
+    border-radius: 5px;
+    font-size: 15px;
+    transition: all 0.5s;
+}
+
+.createGroup-link-2:hover {
+    color: rgba(255, 255, 255, 0.8);
+    border-color:  rgba(255, 255, 255, 0.8);
+}
+
+
+.createGroup-image {
+    margin: 0;
+    margin-left: 20px;
+    width: 340px;
+    background-image: url('https://www.meetup.com/mu_static/en-US/yoga.fa45f7d2.jpg');
+    background-size: cover;
+    background-position: center;
+}
+
+/* COMPONENT 3: CATEGORY CARD */
+
+.categoryCard-link {
+    text-decoration: none;
+    color: #000;
+    margin-right: 20px;
+}
+
+.categoryCard {
+    width: 253px;
+    height: 192px;
+}
+.categoryCard-image-1 {
+    height: 160px;
+    background-image: url('https://secure.meetupstatic.com/photos/event/2/e/a/7/600_450131943.jpeg');
+    background-size: cover;
+    background-position: center;
+    border-radius: 8px;
+}
+
+.categoryCard-title h4 {
+    margin: 0;
+}
+
+/* END MAIN CONTENT */
+
+
+/* BEGIN SIDE BAR */
+/* COMPONENT 8: HOW MEETUP WORKS */
+
+.howMeetupWorks {
+    height: 367px;
+    color: #FFF;
+    background-color: rgb(15, 23, 33);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.howMeetupWorks-title {
+    font-weight: bold;
+    font-size: 32px;
+    text-align: center;
+    margin-bottom: 30px;
+}
+
+.howMeetupWorks-content {
+    display: flex;
+    justify-content: center;
+    margin: 0 170px;
+}
+
+.howMeetupWorks-box {
+    margin-right: 30px;
+    width: 50%;
+}
+.howMeetupWorks-box .icon-find, .icon-add{
+    font-size: 80px;
+    float: left;
+    color:rgb(0, 162, 199);
+}
+
+.howMeetupWorks-box h2 {
+    margin-top: 20px;
+}
+.howMeetupWorks-box span {
+    margin: 0;
+    line-height: 100%;
+}
+
+.howMeetupWorks-link {
+    display: block;
+    color:rgb(0, 162, 199);
+    text-decoration: none;
+    font-weight: bold;
+    font-size: 15px;
+    padding-left: 90px;
+    padding-top: 20px;
+}
+
+.howMeetupWorks-link .icon-forward {
+    position: relative;
+    top: 6px;
+    left: 4px;
+}
+
+/* COMPONENT 9: GET THE APP */
+
+.getTheApp {
+    height: 320px;;
+    display: flex;
+    justify-content: center;
+}
+
+.getTheApp-content {
+    flex-basis: 40%;
+    display: flex;
+    align-items: center;
+}
+
+.getTheApp-content .box span {
+    font-size: 32px;
+    padding: 0;
+    font-weight: bold;
+}
+.getTheApp-link {
+    display: block;
+    color:rgb(0, 162, 199);
+    text-decoration: none;
+    font-weight: bold;
+    font-size: 15px;
+    position: relative;
+    top: -5px;
+    margin-bottom: 30px;
+}
+
+.getTheApp-link .icon-forward {
+    position: relative;
+    top: 10px;
+    left: 4px;
+}
+/* END SIDE BAR */
+
+/* COMPONENT 10: FOOTER */
+
+.footer {
+    height: 560px;
+    color: #FFF;
+    background-color: rgba(53, 62, 72, 0.95);
+}
+
+.footer-main {
+    margin: 0 auto;
+    margin-bottom: 50px;
+    width: 1060px;
+    height: 80%;
+}
+
+.footer-main .header {
+    height: 90px;
+    border-bottom: 1px solid rgb(88, 88, 88);
+}
+
+.footer-main .header a {
+    color: #FFF;
+    position: relative;
+    top: 40%;
+    transition: all 0.1s;
+}
+
+.footer-main .header a:hover {
+    text-decoration: none;
+}
+
+.footer-main .main {
+    margin-top: 50px;
+    display: flex;
+}
+
+.footer-main .main .list-item {
+    flex-grow: 1;
+}
+
+.footer-main .main .list-item .item{
+    color:  rgba(255, 255, 255, 0.7);
+    margin-bottom: 30px;
+}
+
+.footer-main .main .list-item h4{
+    margin-bottom: 30px;
+}
+
+.footer-main .main .contact {
+    width: 400px;
+}
+
+.footer-main .main .contact .follow i{
+    color: rgb(162, 162, 162);
+    margin: 30px 20px 10px 0px;
+    font-size: 26px;
+}
+
+.appItem {
+    margin: 0;
+}
+
+.footer-main .main .contact #languagePicker{
+    height: 50px;
+    width: 350px;
+    background-color: rgb(15, 23, 33);
+    border: 1px solid rgb(162, 162, 162);
+    color: #FFF;
+    padding-left: 10px;
+    border-radius: 4px;
+    font-size: 16px;
+    margin: 40px 0px;
+}
+
+.footer-legal {
+    background-color: rgb(47, 54, 63);
+    margin: 0;
+    height: 20%;
+}
+
+.footer-legal .content {
+    width: 1060px;
+    margin: 30px auto;
+    font-size: 14px;
+    position: relative;
+    top: 25%;
+}
+.footer-legal .content .box-1 {
+    margin-bottom: 30px;
+}
+
