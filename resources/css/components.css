@@ -263,3 +263,44 @@
     background-size: cover;
     background-position: center;
 }
+
+/* COMPONENT 6: EXPLORE HOME */
+
+.exploreHome {
+    position: relative;
+    height: 460px;
+    background-image: linear-gradient(90deg, rgba(1,1,1,0.4) 0%, rgba(0,0,0,0.4) 100%), url('https://www.meetup.com/mu_static/en-US/still_7.1fe15e9b.jpg');
+    background-size: cover;
+    background-position: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    color: #FFF;
+}
+
+
+.exploreHome-title {
+    font-size: 42px;
+    font-weight: bold;
+}
+
+.exploreHome-content {
+    font-size: 19px;
+    font-weight: bold;
+}
+
+.exploreHome-link {
+    text-decoration: none;
+    background-color: #F13A59;
+    color: #FFF;
+    padding: 15px 100px;
+    border-radius: 3px;
+    margin-top: 40px;
+    font-weight: bold;
+    transition: all 0.5s;
+}
+
+.exploreHome-link:hover {
+    background-color: #e2183a;
+}
