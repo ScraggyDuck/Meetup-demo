@@ -304,3 +304,37 @@
 .exploreHome-link:hover {
     background-color: #e2183a;
 }
+
+/* COMPONENT 7: NAV BAR */
+
+.navbar {
+    height: 86.7px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.navbar .logo{
+    flex-grow: 1;
+}
+
+.navbar-item a{
+    font-size: 14px;
+    text-decoration: none;
+    transition: all 0.1s;
+}
+.navbar-item .item-1 {
+    color: rgb(0, 162, 199);
+    font-weight: bold;
+    font-size: 14px;
+    padding: 5px 20px;
+    border-right: 1px solid rgba(46, 62, 72, 0.3);
+}
+
+.navbar-item .item-2 {
+    color: rgb(88, 88, 88);
+}
+
+.navbar-item .item-2:hover {
+    color: rgba(0, 162, 199, 0.6);
+}
