@@ -338,3 +338,62 @@
 .navbar-item .item-2:hover {
     color: rgba(0, 162, 199, 0.6);
 }
+
+/* COMPONENT 8: HOW MEETUP WORKS */
+
+.howMeetupWorks {
+    height: 367px;
+    color: #FFF;
+    background-color: rgb(15, 23, 33);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.howMeetupWorks-title {
+    font-weight: bold;
+    font-size: 32px;
+    text-align: center;
+    margin-bottom: 30px;
+}
+
+.howMeetupWorks-content {
+    display: flex;
+    justify-content: center;
+    margin: 0 170px;
+}
+
+.howMeetupWorks-box {
+    margin-right: 30px;
+    width: 50%;
+}
+.howMeetupWorks-box .icon-find, .icon-add{
+    font-size: 80px;
+    float: left;
+    color:rgb(0, 162, 199);
+}
+
+.howMeetupWorks-box h2 {
+    margin-top: 20px;
+}
+.howMeetupWorks-box span {
+    margin: 0;
+    line-height: 100%;
+}
+
+.howMeetupWorks-link {
+    display: block;
+    color:rgb(0, 162, 199);
+    text-decoration: none;
+    font-weight: bold;
+    font-size: 15px;
+    padding-left: 90px;
+    padding-top: 20px;
+}
+
+.howMeetupWorks-link .icon-forward {
+    position: relative;
+    top: 6px;
+    left: 4px;
+}
